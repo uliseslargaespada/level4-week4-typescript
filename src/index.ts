@@ -48,7 +48,7 @@ const jesse: Student = {
   firstName: "Jesse",
   lastName: "Yocum",
   age: 108,
-  perfectAttendance: true
+  perfectAttendance: true,
 };
 
 console.log(selectStudent(jesse));
