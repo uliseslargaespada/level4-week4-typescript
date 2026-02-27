@@ -2,12 +2,12 @@
   "name": "level4-week4-typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.js",
+  "main": "./src/server.js",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "tsx watch src/server.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "build": "tsc -p tsconfig.json",
-    "start": "node dist/index.js"
+    "start": "node dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -22,8 +22,13 @@
   },
   "homepage": "https://github.com/uliseslargaespada/level4-week4-typescript#readme",
   "devDependencies": {
-    "@types/node": "^25.3.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.2",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^5.2.1"
   }
 }

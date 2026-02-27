@@ -10,7 +10,7 @@
     "target": "ES2024",
     "module": "nodenext",
     "moduleDetection": "force",
-    "types": [],
+    "types": ["node"],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -41,7 +41,9 @@
     "noUncheckedSideEffectImports": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "noEmitOnError": true
+    "noEmitOnError": true,
+    "rewriteRelativeImportExtensions":true,
+    "allowImportingTsExtensions": true,
   },
   "include": ["src/**/*.ts"]
 }
